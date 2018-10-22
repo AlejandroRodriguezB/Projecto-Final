@@ -1,4 +1,4 @@
 package com.iesemilidarder.base.data;
 
-public class Sales {
+public class Hotels extends Products{
 }

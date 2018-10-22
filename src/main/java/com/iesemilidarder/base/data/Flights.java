@@ -1,4 +1,4 @@
 package com.iesemilidarder.base.data;
 
-public class Product {
+public class Flights extends Products{
 }
