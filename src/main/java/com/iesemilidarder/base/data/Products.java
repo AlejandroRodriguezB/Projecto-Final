@@ -8,12 +8,5 @@ public abstract class Products {
     protected Double sales;
     protected String company;
 
-    List<String> list = new ArrayList<>();
-
-    public void  country(){
-        list.add("Alemania");
-        list.add("España");
-        System.out.println(list);
-    }
 
 }

@@ -1,5 +1,6 @@
 package com.iesemilidarder.base.controler;
 
+import com.iesemilidarder.base.helper.DataHelper;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -9,10 +10,10 @@ public class MyControler {
 
 
 
-    @RequestMapping("/Products")
-    public void getCar(@RequestParam(value="name", defaultValue="Run Run") String name) {
+    @RequestMapping("/getAllProducts")
+    public void getCar(@RequestParam String name) {
 
-        System.out.println("hola");
+        System.out.println(DataHelper.getList());
 
     }
 }
