@@ -1,4 +1,4 @@
-package com.iesemilidarder.base.helper;
+package com.iesemilidarder.base.exception;
 
 public class SystemUtilHelper {
 

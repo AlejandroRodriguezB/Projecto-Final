@@ -1,13 +1,11 @@
 package com.iesemilidarder.base;
 
-import com.iesemilidarder.base.helper.DataHelper;
-
-import java.util.List;
+import com.iesemilidarder.base.exception.DataHelper;
 
 public class Launcher {
-    public static List<String> main (String... args){
+    public static void main (String... args){
 
-        return DataHelper.getList();
+        System.out.println(DataHelper.getList());
 
     }
 

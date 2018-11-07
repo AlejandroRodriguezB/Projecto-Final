@@ -1,6 +1,4 @@
-package com.iesemilidarder.base.helper;
-
-import com.iesemilidarder.base.data.Products;
+package com.iesemilidarder.base.exception;
 
 import java.util.ArrayList;
 import java.util.List;
