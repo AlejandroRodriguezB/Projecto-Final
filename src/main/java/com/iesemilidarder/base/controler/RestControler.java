@@ -9,8 +9,8 @@ import java.util.List;
 public class RestControler {
 
     @RequestMapping("/getAllProducts")
-    public List<Products> getAllProducts() {
-        List<Products> paises = Products.getList();
+    public List<String> getAllProducts() {
+        List<String> paises = Products.getList();
         return paises;
     }
 }

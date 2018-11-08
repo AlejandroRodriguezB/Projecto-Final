@@ -1,6 +1,5 @@
 package com.iesemilidarder.base.exception;
 
-import com.iesemilidarder.base.controler.RestControler;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 

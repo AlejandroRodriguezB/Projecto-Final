@@ -1,41 +1,62 @@
 package com.iesemilidarder.base.data;
 
-import com.sun.org.apache.xerces.internal.xs.StringList;
-
 import java.util.ArrayList;
 import java.util.List;
 
 public abstract class Products {
-    protected Double price;
-    protected Double sales;
-    protected String company;
-    protected List paises;
+    private Double price;
+    private Double sales;
+    private String company;
 
-    private static List<String> list = new ArrayList<>();
-
-    public static void country() {
-        list.add("Alemania");
-        list.add("Austria");
-        list.add("Bélgica");
-        list.add("Bulgaria");
-        list.add("Chipre");
-        list.add("Croacia");
-        list.add("Dinamarca");
-        list.add("Eslovaquia");
-        list.add("Eslovenia");
-        list.add("España");
-        list.add("Estonia");
-        list.add("Finlandia");
-        list.add("Francia");
-        list.add("Grecia");
-        list.add("Italia");
-        list.add("Países Bajos");
-        list.add("Portugal");
-        list.add("Portugal");
+    public Double getPrice() {
+        return price;
     }
 
-    public static List<Products> getList() {
-        country();
-        return getList();
+    public void setPrice(Double price) {
+        this.price = price;
+    }
+
+    public Double getSales() {
+        return sales;
+    }
+
+    public void setSales(Double sales) {
+        this.sales = sales;
+    }
+
+    public String getCompany() {
+        return company;
+    }
+
+    public void setCompany(String company) {
+        this.company = company;
+    }
+
+    private static List<String> countrys = new ArrayList<>();
+
+    public static void list() {
+        countrys.add("Alemania");
+        countrys.add("Austria");
+        countrys.add("Bélgica");
+        countrys.add("Bulgaria");
+        countrys.add("Chipre");
+        countrys.add("Croacia");
+        countrys.add("Dinamarca");
+        countrys.add("Eslovaquia");
+        countrys.add("Eslovenia");
+        countrys.add("España");
+        countrys.add("Estonia");
+        countrys.add("Finlandia");
+        countrys.add("Francia");
+        countrys.add("Grecia");
+        countrys.add("Italia");
+        countrys.add("Países Bajos");
+        countrys.add("Portugal");
+        countrys.add("Portugal");
+    }
+
+    public static List<String> getList() {
+        list();
+        return countrys;
     }
 }
