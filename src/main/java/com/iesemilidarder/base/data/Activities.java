@@ -12,5 +12,5 @@ public class Activities extends Products{
         this.paises = paises;
     }
 
-    protected List paises;
+    private List paises;
 }

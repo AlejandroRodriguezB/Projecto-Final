@@ -32,9 +32,16 @@ public abstract class Products {
         this.company = company;
     }
 
+    public Products(Double price, Double sales, String company,List countrys) {
+        super();
+        this.price = price;
+        this.sales = sales;
+        this.company = company;
+        this.countrys = countrys;
+    }
     private static List<String> countrys = new ArrayList<>();
 
-    public static void list() {
+    public static void list(){
         countrys.add("Alemania");
         countrys.add("Austria");
         countrys.add("Bélgica");
