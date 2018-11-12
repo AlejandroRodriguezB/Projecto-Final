@@ -5,17 +5,17 @@ import java.util.List;
 
 public class DataHelper {
 
-    private static List<Product> products = new ArrayList<>();
+    private static List<Product> paises = new ArrayList<>();
 
-    public static List<Product> getProducts() {
-        if (products.isEmpty()){
+    public static List<Product> getPaises() {
+        if (paises.isEmpty()){
             init();
         }
-        return products;
+        return paises;
     }
 
-    public static void setProducts(List<Product> products) {
-        DataHelper.products = products;
+    public static void setPaises(List<Product> country) {
+        DataHelper.paises = country;
     }
 
     public static List<String> getAreas(){
@@ -42,13 +42,49 @@ public class DataHelper {
 
     public static List<Product> init(){
         for (String item: getAreas()) {
-            Product producto = new Product();
-            producto.setCompany(null);
-            producto.setPrice(null);
-            producto.setSales(null);
-            producto.setCountry(item);
-            products.add(producto);
+            Product pais = new Product();
+            pais.setCompany(null);
+            pais.setPrice(null);
+            pais.setSales(null);
+            pais.setCountry(item);
+            paises.add(pais);
         }
-        return products;
+        return paises;
+    }
+
+    private static List<Product> product = new ArrayList<>();
+
+    public static List<String> productos(){
+        List<String> productos = new ArrayList<>();
+        productos.add("Activity");
+        productos.add("Flight");
+        productos.add("Hotel");
+        productos.add("Restaurant");
+        return productos;
+    }
+
+    public static List<Product> getProduct() {
+        if (product.isEmpty()){
+            inicia();
+        }
+        return product;
+    }
+
+    public static void setProduct(List<Product> producto) {
+        DataHelper.product = producto;
+    }
+
+    public static List<Product> inicia() {
+        for (String prod : productos()) {
+            Product producto = new Product();
+            producto.setProducto(prod);
+            product.add(producto);
+        }
+        return product;
+    }
+
+    public static Product create(Product producto) {
+        product.add(producto);
+        return producto;
     }
 }

@@ -5,6 +5,11 @@ public class Product {
     private Double sales;
     private String company;
     private String country;
+    private String producto;
+
+    public String getProducto() { return producto; }
+
+    public void setProducto(String cosa) { this.producto = cosa; }
 
     public Double getPrice() {
         return price;
