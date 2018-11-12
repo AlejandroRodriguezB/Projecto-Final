@@ -1,7 +1,9 @@
 package com.iesemilidarder.base.data;
 
-public class Hotels extends Products{
+public class Hotel extends Product {
     private Integer rating;
+
+
 
     public Integer getRating() {
         return rating;

@@ -1,4 +1,4 @@
-package com.iesemilidarder.base.exception;
+package com.iesemilidarder.base;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

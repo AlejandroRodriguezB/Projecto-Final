@@ -1,6 +1,8 @@
 package com.iesemilidarder.base.data;
 
-public class Flights extends Products{
+public class Flight extends Product {
+
+
     public String getDestination() {
         return destination;
     }
